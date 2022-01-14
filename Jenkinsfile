@@ -14,6 +14,7 @@ pipeline {
 		stage('Building image') { 
 			steps{ 
 				script { 
+					echo "hello world"
 					docker.build("simo00707/mycompany-app:latest")
 					
 				} 
